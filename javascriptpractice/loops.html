@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loops</title>
+</head>
+<body>
+  <h1>Loops</h1>
+  <script>
+
+    // for(let i=1;i<=10;i++){
+    //   console.log(i);
+    // }
+
+
+    // for(let i=10;i>=1;i--){
+    //   console.log(i)
+    // }
+
+
+    // for(let i=1;i<=20;i++){
+    //   if(i%2===0){
+    //     console.log(i);
+    //   }
+    // }
+
+
+    // for(let i=1;i<=20;i++){
+    //   if(i%2===1){
+    //     console.log(i);
+    //   }
+    // }
+
+
+    // for(let i=1;i<=50;i++){
+    //   if(i%5===0){
+    //     console.log(i);
+    //   }
+    // }
+
+
+    // for(let i=50;i<=100;i++){
+    //   console.log(i);
+    // }
+
+
+    // for(let i=1;i<=30;i++){
+    //   if(i%3===0){
+    //     console.log(i);
+    //   }
+    // }
+
+
+    // for(let i=1;i<=100;i++){
+    //   if(i%5===0){
+    //     console.log(i);
+    //   }
+    // }
+
+
+    // for(let i=1;i<=15;i++){
+    //   console.log(i);
+    // }
+
+
+    // for(let i=100;i>=1;i--){
+    //   console.log(i);
+    // }
+
+
+    // ---------------------------------------------
+
+    // let sum = 0;
+    // for(let i=1;i<=10;i++){
+    //   sum=sum+i;
+    // }
+    // console.log(sum);
+
+
+    // let sum = 0;
+    // for(let i=1;i<=100;i++){
+    //   if(i%2===0){
+    //     sum=sum+i;
+    //   }
+    // }
+    // console.log(sum);
+
+
+    // let sum = 0;
+    // for(let i=1;i<=100;i++){
+    //   if(i%2===1){
+    //     sum=sum+i;
+    //   }
+    // }
+    // console.log(sum);
+
+
+    // let num = 5;
+    // let fact = 1;
+    // for(let i=1;i<=num;i++){
+    //   fact = fact*i;
+    // }
+    // console.log(fact);
+
+
+    // let num = 7;
+    // for(let i=1;i<=10;i++){
+    //   console.log(`${num} * ${i} = ${num*i}`)
+    // }
+
+
+    // for(let i=100;i>=2;i-=2){
+    //   console.log(i);
+    // }
+
+
+    // let mul = 1;
+    // for(let i=1;i<=10;i++){
+    //   mul = mul*i;
+    // }
+    // console.log(mul);
+
+
+    // let sum = 0;
+    // for(let i=5;i<=100;i+=5){
+    //   sum = sum+i;
+    // }
+    // console.log(sum);
+
+
+    // let count=0;
+    // for(let i=1;i<=100;i++){
+    //   if(i%7===0){
+    //     console.log(i);
+    //     count = count+1;
+    //   }
+    // }
+    // console.log(`Total count : ${count}`);
+
+
+    // -----------------------------------------------
+
+
+    // let square = 0;
+    // for(let i=1;i<=20;i++){
+    //   square = i*i;
+    //   console.log(`Square of ${i} : ${square}`)
+    // }
+
+
+    // let cube = 0;
+    // for(let i=1;i<=10;i++){
+    //   cube = i*i*i;
+    //   console.log(`Cube of ${i} : ${cube}`);
+    // }
+
+
+    // let sum = 0;
+    // let square = 0;
+    // for(let i=1;i<=10;i++){
+    //   square = i*i;
+    //   sum = sum + square;
+    // }
+    // console.log(`Sum of sqaures from 1 to 10 is ${sum}`);
+
+
+
+    // for(let i=35;i>=1;i--){
+    //   console.log(i);
+    // }
+
+
+    // let count = 0;
+    // for(let i=2;i<=100;i+=2){
+    //   count = count+1;
+    // }
+    // console.log(`${count} even numbers are present`);
+
+
+    // let count = 0;
+    // for(let i=1;i<=100;i++){
+    //   if(i%2===1){
+    //     count=count+1;
+    //   }
+    // }
+    // console.log(`${count} odd numbers are present`);
+
+
+    // let num = 24;
+    // for(let i=1;i<=num;i++){
+    //   if(num%i===0){
+    //     console.log(`factor of ${num} is ${i}`);
+    //   }
+    // }
+
+
+    // let num = 11;
+    // let count = 0;
+    // for(let i=1;i<=num;i++){
+    //   if(num%i===0){
+    //     count = count+1;
+    //   }
+    // }
+    // if(count===2){
+    //   console.log(`${num} is a prime number`);
+    // }else{
+    //   console.log(`${num} is not a prime number`);
+    // }
+
+
+    // for(let i=1;i<=100;i++){
+    //   if(i%3===0 && i%5===0){
+    //     console.log(`${i} is divisible by both 3 and 5`);
+    //   }
+    // }
+
+
+    // let sum = 0;
+    // for(let i=1;i<=100;i++){
+    //   if(i%3===0 && i%5===0){
+    //     sum = sum+i;
+    //   }
+    // }
+    // console.log(`${sum} is sum of all number between 1 and 100 that are divisible by both 3 and 5`);
+
+
+    // -----------------------------------------
+
+
+    // let num = 123456;
+    // let reverse = 0;
+    // for(;num>0;num=Math.floor(num/10)){
+    //   let lastdigit = num%10;
+    //   reverse = reverse*10+lastdigit;
+    // }
+    // console.log(`Reverse number is ${reverse}`);
+
+
+    // let num = 987654;
+    // let count=0;
+    // for(;num>0;num=Math.floor(num/10)){
+    //   count++;
+    // }
+    // console.log(`Total count : ${count}`);
+
+
+    // let num = 1234;
+    // let sum = 0;
+    // for(;num>0;num=Math.floor(num/10)){
+    //   let lastdigit = num%10;
+    //   sum = sum+lastdigit;
+    // }
+    // console.log(`sum is ${sum}`);
+
+
+    // let num = 1234;
+    // let product = 1;
+    // for(;num>0;num=Math.floor(num/10)){
+    //   let lastdigit = num%10;
+    //   product=product*lastdigit;
+    // }
+    // console.log(`product is ${product}`);
+
+
+    // let num = 58372;
+    // let largest = 0;
+    // for(;num>0;num=Math.floor(num/10)){
+    //   let lastdigit=num%10;
+    //   if(lastdigit > largest){
+    //     largest = lastdigit;
+    //   }
+    // }
+    // console.log(`largest digit is ${largest}`);
+
+
+    // let num = 58372;
+    // let smallest = 9;
+    // for(;num>0;num=Math.floor(num/10)){
+    //   let lastdigit = num%10;
+    //   if(lastdigit < smallest){
+    //     smallest = lastdigit;
+    //   }
+    // }
+    // console.log(`smallest digit is ${smallest}`);
+
+
+    // let num = 121;
+    // let originalnum = num;
+    // let reverse = 0;
+    // for(;num>0;num=Math.floor(num/10)){
+    //   let lastdigit = num%10;
+    //   reverse = reverse*10+lastdigit;
+    // }
+    // if(reverse === originalnum){
+    //   console.log(`${originalnum} is palindrom number`);
+    // }else{
+    //   console.log(`${originalnum} is not a palindrom number`);
+    // }
+
+
+    // let num = 4825;
+    // for(;num>0;num=Math.floor(num/10)){
+    //   let lastdigit = num%10;
+    //   console.log(lastdigit)
+    // }
+
+
+    // let num = 123456;
+    // let iseven=0;
+    // let isodd=0;
+    // for(;num>0;num=Math.floor(num/10)){
+    //   let lastdigit = num%10;
+    //   if(lastdigit%2===0){
+    //     iseven++;
+    //   }
+    //   if(lastdigit%2===1){
+    //     isodd++
+    //   }
+    // }
+    // console.log(`total even digits : ${iseven}`);
+    // console.log(`total odd digits : ${isodd}`);
+
+
+    // let num = 153;
+    // let orriginalnum = num;
+    // let digits=0
+    // for(;num>0;num=Math.floor(num/10)){
+    //   lastdigit = num%10;
+    // }
+
+    // ----------------------------------------
+
+    // let num = 12345;
+    // let reverse = 0;
+    // for(;num>0;num=Math.floor(num/10)){
+    //   let lastdigit = num % 10;
+    //   reverse = reverse*10+lastdigit;
+    // }
+    // console.log(reverse);
+
+
+    // let num = 987654;
+    // let count = 0;
+    // for(;num>0;num=Math.floor(num/10)){
+    //   let lastdigit = num%10;
+    //   count++;
+    // }
+    // console.log(count);
+
+
+    // let num = 1234;
+    // let sum = 0;
+    // for(;num>0;num=Math.floor(num/10)){
+    //   let lastdigit = num%10;
+    //   sum +=lastdigit;
+    // }
+    // console.log(sum);
+
+
+    // let num = 1234;
+    // let product = 1;
+    // for(;num>0;num=Math.floor(num/10)){
+    //   let lastdigit = num%10;
+    //   product*=lastdigit;
+    // }
+    // console.log(product);
+
+
+    // let num = 58372;
+    // let largest = 0;
+    // for(;num>0;num=Math.floor(num/10)){
+    //   let lastdigit = num%10;
+    //   if(lastdigit > largest){
+    //     largest = lastdigit;
+    //   }
+    //   console.log(largest);
+    // }
+
+
+    // let num=58372;
+    // let smallest=9;
+    // for(;num>0;num=Math.floor(num/10)){
+    //   lastdigit = num%10;
+    //   if(lastdigit < smallest){
+    //     smallest = lastdigit;
+    //   }
+    // }
+    // console.log(smallest);
+
+
+    // let num = 1221;
+    // let originalnum = num;
+    // let reverse = 0;
+    // for(;num>0;num=Math.floor(num/10)){
+    //   let lastdigit = num%10;
+    //   reverse = reverse*10+lastdigit;
+    // }
+    // if(originalnum=== reverse){
+    //   console.log(`palindrom number`);
+    // }else{
+    //   console.log(`not a palindrom number`);
+    // }
+
+
+    // let num = 4825;
+    // for(;num>0;num=Math.floor(num/10)){
+    //   lastdigit = num%10;
+    //   console.log(lastdigit);
+    // }
+
+
+    // let num = 123456;
+    // let iseven = 0;
+    // let isodd = 0;
+    // for(;num>0;num=Math.floor(num/10)){
+    //   let lastdigit = num%10;
+    //   if(num%2===0){
+    //     iseven++;
+    //   }
+    //   if(num%2===1){
+    //     isodd++;
+    //   }
+    // }
+    // console.log(`total even number : ${iseven}`);
+    // console.log(`total odd number : ${isodd}`);
+
+
+    // -------------------------------------------------
+
+
+    // let num = 10020030;
+    // let count = 0;
+    // for(;num>0;num=Math.floor(num/10)){
+    //    let lastdigit = num%10;
+    //    if(lastdigit===0){
+    //     count++;
+    //    }
+    // }
+    // console.log(`${count}`);
+
+
+
+    // let num = 48372;
+    // let sum = 0;
+    // let firstdigit = num;
+    // let lastdigit = num%10;
+    // for(;firstdigit>=10;firstdigit=Math.floor(firstdigit/10)){
+    // }
+    // sum = firstdigit + lastdigit;
+    // console.log(`firstdigit : ${firstdigit}`);
+    // console.log(`lastdigit : ${lastdigit}`);
+    // console.log(`sum : ${sum}`);
+
+
+
+
+    // let num = 24864;
+    // let iseven = true;
+    // for(;num>0;num=Math.floor(num/10)){
+    //   let lastdigit = num%10;
+    //   if(lastdigit%2!==0){
+    //     iseven = false;
+    //     break;
+    //   }
+    // }
+    // if(iseven){
+    //   console.log(`all digits are even`);
+    // }else{
+    //   console.log(`all digits are not even`);
+    // }
+
+
+    // let num = 98456231;
+    // let count = 0;
+    // for(;num>0;num=Math.floor(num/10)){
+    //   let lastdigit = num%10;
+    //   if(lastdigit>5){
+    //     count++;
+    //   }
+    // }
+    // console.log(`${count} digits are greater than 5`);
+
+
+    // let num = 29876154;
+    // let largest = 0;
+    // let secondlargest = 0;
+    // for(;num>0;num=Math.floor(num/10)){
+    //   let lastdigit = num%10;
+    //   if(lastdigit > largest) {
+    //     secondlargest = largest;
+    //     largest = lastdigit;
+    //   }
+    //   else if(lastdigit > secondlargest && lastdigit != largest){
+    //     secondlargest = lastdigit;
+    //   }
+    // }
+    // console.log(`Largest digit is : ${largest}`);
+    // console.log(`Second largest digit is : ${secondlargest}`);
+
+
+    // let num = 451782;
+    // let isseven = false;
+    // for(;num>0;num=Math.floor(num/10)){
+    //   let lastdigit = num%10;
+    //   if(lastdigit===7){
+    //     isseven = true;
+    //     break;
+    //   }
+    // }
+    // if(isseven){
+    //   console.log(`Digit 7 is present`);
+    // }
+    // else{
+    //   console.log(`Digit 7 is not present`);
+    // }
+
+
+    // let num = 1223334444;
+    // let digit = 4;
+    // let count = 0;
+    // for(;num>0;num=Math.floor(num/10)){
+    //   let lastDigit = num%10;
+    //   if(lastDigit === digit){
+    //     count++;
+    //   }
+    // }
+    // console.log(`Frequency = ${count}`);
+
+
+    // ------------------- While loop ----------------------------------
+
+
+  // let i = 1;
+  // while(i<=10){
+  //   console.log(i);
+  //   i++;
+  // }
+
+
+  // let i = 10;
+  // while(i>=1){
+  //   console.log(i);
+  //   i--;
+  // }
+
+
+  // let i = 2;
+  // while(i<=50){
+  //   console.log(i);
+  //   i+=2;
+  // }
+
+
+  // let i = 1;
+  // while(i<=50){
+  //   if(i%2!=0){
+  //     console.log(i);
+  //   }
+  //   i++;
+  // }
+
+
+  // let i = 1;
+  // let sum  = 0;
+  // while(i<=100){
+  //   sum = sum+i;
+  //   i++;
+  // }
+  // console.log(`sum of numbers are ${sum}`);
+
+
+  // let i = 2;
+  // let sum  = 0
+  // while(i<=100){
+  //   sum = sum+i;
+  //   i+=2;
+  // }
+  // console.log(`sum of even numbers are ${sum}`);
+
+
+  // let num = 6;
+  // let fact = 1;
+  // let i = 1;
+  // while(i<=num){
+  //   fact = fact*i;
+  //   i++;
+  // }
+  // console.log(`factorial of ${num} is ${fact}`);
+
+
+  // let num = 8;
+  // let i =1;
+  // while(i<=10){
+  //   console.log(`${num} * ${i} = ${num*i}`);
+  //   i++;
+  // }
+
+
+  // let num = 987654;
+  // let count = 0;
+  // while(num>0){
+  //   count++;
+  //   num = Math.floor(num/10);
+  // }
+  // console.log(count);
+
+
+  // let num = 12345;
+  // let reverse = 0;
+  // while(num>0){
+  //   let lastdigit = num%10;
+  //   reverse = reverse*10 + lastdigit;
+  //   num = Math.floor(num/10);
+  // }
+  // console.log(reverse);
+
+
+  // -------------------------------------
+
+  // let num = 4567;
+  // let sum = 0;
+  // while(num>0){
+  //   let lastDigit = num%10;
+  //   sum = sum+lastDigit;
+  //   num = Math.floor(num/10);
+  // }
+  // console.log(`sum of digits are ${sum}`);
+
+
+  // let num = 234;
+  // let product = 1;
+  // while(num>0){
+  //   let lastDigit = num%10;
+  //   product = product*lastDigit;
+  //   num = Math.floor(num/10);
+  // }
+  // console.log(`product are ${product}`);
+
+
+  // let num = 75826;
+  // let largest = 0;
+  // while(num>0){
+  //   let lastDigit = num%10;
+  //   num = Math.floor(num/10);
+  //   if(lastDigit > largest){
+  //     largest = lastDigit;
+  //   }
+  // }
+  // console.log(`largest digit is ${largest}`);
+
+
+  // let num = 75826;
+  // let smallest = 9;
+  // while(num>0){
+  //   let lastDigit = num%10;
+  //   num = Math.floor(num/10);
+  //   if(lastDigit < smallest){
+  //     smallest = lastDigit;
+  //   }
+  // }
+  // console.log(`smallest digit is ${smallest}`);
+
+
+  // let num = 10020030;
+  // let count = 0;
+  // while(num>0){
+  //   let lastDigit = num%10;
+  //   num = Math.floor(num/10);
+  //   if(lastDigit === 0){
+  //     count++
+  //   }
+  // }
+  // console.log(`total number of zeros are ${count}`);
+
+
+  // let num = 123456789;
+  // let isEven =  0;
+  // let isOdd = 0;
+  // while(num>0){
+  //   let lastDigit = num%10;
+  //   num = Math.floor(num/10); 
+  //   if(lastDigit%2 === 0){
+  //     isEven++;
+  //   }else{
+  //     isOdd++;
+  //   }
+  // }
+  // console.log(`Even = ${isEven}`);
+  // console.log(`Odd = ${isOdd}`);
+
+
+  // let num = 121;
+  // let originalnum = num;
+  // let reverse = 0;
+  // while(num>0){
+  //   let lastDigit = num%10;
+  //   reverse = reverse*10+lastDigit;
+  //   num = Math.floor(num/10);
+  // }
+  // if(reverse === originalnum){
+  //   console.log(`${originalnum} is palindrom number`);
+  // }else{
+  //   console.log(`${originalnum} is not a palindrom number`);
+  // }
+
+
+  // let num = 457812;
+  // let isSeven =  false;
+  // while(num>0){
+  //   let lastDigit = num%10;
+  //   if(lastDigit === 7){
+  //     isSeven = true;
+  //     break;
+  //   }
+  //   num = Math.floor(num/10);
+  // }
+  // if(isSeven){
+  //   console.log(`Digit found`);
+  // }
+  // else{
+  //   console.log(`Digit not found`);
+  // }
+
+
+  // let num = 1223334444;
+  // let digit =  3;
+  // let count = 0;
+  // while(num>0){
+  //   let lastDigit=num%10;
+  //   if(lastDigit === digit){
+  //     count++;
+  //   }
+  //   num = Math.floor(num/10);
+  // }
+  // console.log(count);
+
+
+  // -----------------------------
+  
+
+  // let num = 145;
+  // let originalnum = num;
+  // let sum = 0;
+  // while(num>0){
+  //   let lastDigit = num%10;
+  //   let fact = 1;
+  //   let i = 1;
+  //   while(i<=lastDigit){
+  //     fact = fact*i;
+  //     i++;
+  //   }
+  //   sum = sum+fact;
+  //   num = Math.floor(num/10);
+  // }
+  // if(sum===originalnum){
+  //   console.log(`${originalnum} is a strong number`);
+  // }else{
+  //   console.log(`${originalnum} is not a strong number`);
+  // }
+
+
+  // let num = 237845;
+  // let count = 0;
+  // while(num>0){
+  //   let lastDigit = num%10;
+  //   if(lastDigit === 2 || lastDigit === 3 || lastDigit === 5 || lastDigit === 7){
+  //     count++;
+  //   }
+  //   num = Math.floor(num/10);
+  // }
+  // console.log(`prime digis are ${count}`);
+
+
+  
+  // let num = 2378455;
+  // let count = 0;
+  // let sum = 0;
+  // while(num>0){
+  //   let lastDigit = num%10;
+  //   if(lastDigit === 2 || lastDigit === 3 || lastDigit === 5 || lastDigit === 7){
+  //     sum = sum+lastDigit;
+  //     count++;
+  //   }
+  //   num = Math.floor(num/10);
+  // }
+  // console.log(`prime digis are ${count}`);
+  // console.log(`sum is ${sum}`);
+
+
+  // let num = 123456;
+  // let reverse = 0;
+  // while(num>0){
+  //   let lastDigit = num%10;
+  //   reverse = reverse*10 + lastDigit
+  //   num = Math.floor(num/10);
+  // }
+  // console.log(reverse);
+
+
+  // let num = 123456725;
+  // let count = 0;
+  // while(num>0){
+  //   let lastDigit = num%10;
+  //   if(lastDigit>=5){
+  //     count++;
+  //   }
+  //   num = Math.floor(num/10);
+  // }
+  // console.log(`number of digits are greater thn 5 = ${count}`);
+
+
+  // let num = 12344917;
+  // let largest = -1;
+  // let secondlargest = -1;
+  // while(num>0){
+  //   let lastDigit =  num%10;
+  //   if(lastDigit > largest){
+  //     secondlargest = largest;
+  //     largest =  lastDigit;
+  //   } else if(lastDigit>secondlargest && lastDigit !=largest){
+  //     secondlargest = lastDigit;
+  //   }
+  //   num = Math.floor(num/10);
+  // }
+  // console.log(secondlargest);
+
+
+  // let num = 234501928;
+  // let smallest = 10;
+  // let secondsmallest = 10;
+  // while(num>0){
+  //   let lastDigit = num%10;
+  //   if(lastDigit < smallest){
+  //     secondsmallest = smallest;
+  //     smallest = lastDigit;
+  //   }else if(lastDigit < secondsmallest && lastDigit !== smallest){
+  //     secondsmallest = lastDigit;
+  //   }
+  //   num = Math.floor(num/10);
+  // }
+  // if(secondsmallest === 10){
+  //   console.log(`Second smallest digit does not exist`);
+  // }else{
+  //   console.log(`Second smallest digit : ${secondsmallest}`);
+  // }
+
+
+  // let num = 5289;
+  // let reverse = 0;
+  // while(num>0){
+  //   let reverse = num%10;
+  //   num=Math.floor(num/10);
+  //   console.log(lastDigit);
+  // }
+
+
+  // let num = 234539346;
+  // let sum = 0
+  // let lastDigit = num%10;
+  // while(num>=10){
+  //   num = Math.floor(num/10);
+  // }
+  // sum = num+lastDigit;
+  // console.log(sum);
+
+// ----------------------------------------------
+
+
+    // let num = 15
+    // let first = 0;
+    // let second = 1;
+    // let count = 1;
+    // console.log(first);
+    // console.log(second);
+    // while(count <= num-2){
+    //   let next = first + second;
+    //   console.log(next);
+    //   first = second;
+    //   second =  next;
+    //   count++;
+    // }
+
+
+    let num1 = 12;
+    let num2 = 18;
+    let i = 1;
+    let gcd = 1;
+    while(i<=num1 && i<=num2){
+      if(num1%i === 0 && num2%i===0){
+        gcd = i;
+        console.log(gcd);
+      }
+      i++;
+    }
+
+  </script>
+</body>
+</html>

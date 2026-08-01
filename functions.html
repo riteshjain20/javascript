@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Functions</title>
+</head>
+<style>
+  #btn {
+    transition: all 0.9s ease;
+  }
+  .btn-alt {
+    width: 200px;
+    transition: all 0.9s ease;
+  }
+</style>
+<body>
+  <button id="btn" onclick="dblsize()">Subscribe</button>
+  <script>
+    // let age = 20;
+    // function printAge(){
+    //   console.log(`Your age is ${age}`)
+    // }
+    // printAge();
+
+
+
+    // function addition(x,y){
+    //   return x+y;
+    // }
+    // let a = addition(10,20);
+    // console.log(a);
+
+
+    // let fun = function(){
+    //   console.log(`its function expression`);
+    // }
+    // fun();
+
+
+
+    // let add = (x,y) => x+y;  
+    // console.log(add(10,21));
+
+
+
+
+    function oddEven(num){
+      if(num%2 === 0){
+        return `Even Number`;
+      }
+      else{
+        return `Odd Number`;
+      }
+    }
+    // console.log(oddEven(19));
+
+
+
+
+    function islarger(num1, num2){
+      if(num1 > num2){
+        return `${num1} is greater`;
+      }
+      else {
+        return `${num2} is greater`;
+      }
+    }
+    // console.log(islarger(10,20));
+
+
+
+    function tofahrenheit(celsiusValue){
+      return (9/5)*celsiusValue + 32
+    }
+    // console.log(tofahrenheit(100));
+
+
+
+
+    // let arr = [1,2,3,4,5,6,7,8,9];
+    // let oddnum = arr.filter((num,index)=>{
+    //   if(num%2 === 0){
+    //     return false;
+    //   }else {
+    //     return true;
+    //   }
+    // });
+    // console.log(oddnum);
+
+
+
+    // let arr = [1,2,3,4,5,6,7,8,9];
+    // let sqnum = arr.map((num)=>{
+    //   return num*num;
+    // })
+    // console.log(sqnum);
+
+
+
+    // let multiply = (num1,num2) => {
+    //   return num1*num2;
+    // }
+    // console.log(multiply(3,6));
+
+
+
+
+    // let fndblsize = function dblsize(){
+    //   let buttonElement = document.querySelector('#btn');
+    //   buttonElement.classList.add('btn-alt');
+    // }
+    // setTimeout(fndblsize, 2000);
+
+
+
+    // function dblsize(){
+    //   let buttonElement = document.querySelector('#btn');
+    //   buttonElement.classList.add('btn-alt');
+    // }
+    // let buttonElement = document.querySelector('#btn');
+    // buttonElement.addEventListener('click', event => {
+    //   setTimeout(dblsize, 2000);
+    // })
+
+
+
+    
+    let arr = [1,2,3,4,5,6];
+    let sum = 0;
+    arr.forEach((num)=>{
+      return sum += num;
+    });
+    console.log(sum);
+
+    </script>
+</body>
+</html>

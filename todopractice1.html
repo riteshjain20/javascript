@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO LIST</title>
+  <style>
+    .todolistitem {
+      display: flex;
+      gap: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>TODO LIST</h1>
+    <div>
+      <div>
+        <input type="text" placeholder="Enter list here..." id="todoinput">
+        <input type="date" name="" id="tododate">
+        <button class="btn btn_add" onclick="addtodo()">ADD</button>
+      </div>
+      <div>
+        <div id="todocontainer"></div>
+      </div>
+    </div>
+  </div>
+  <script>
+    let todoList = [];
+    displayitem();
+    function addtodo(){
+      let inputElement = document.querySelector('#todoinput');
+      let dateElement = document.querySelector('#tododate');
+      let todoItem = inputElement.value;
+      let todoDate = dateElement.value;
+      todoList.push({item : todoItem, dueDate : todoDate});
+      inputElement.value = '';
+      dateElement.value = '';
+      displayitem();
+    }
+    function displayitem(){
+      let displayElement = document.querySelector('#todocontainer');
+      let newhtml = '';
+      displayElement.innerText = '';
+      for(let i = 0; i < todoList.length; i++){
+        let {item, dueDate} = todoList[i];
+        newhtml += `<div class='todolistitem'>
+          <p class='todoitemtitle'>${item}</p>
+          <p class='todoitemdate'>${dueDate}</p>
+          <button class='tododeletebtn' onclick='todoList.splice(${i},1); displayitem();'>Delete</button>
+          </div>`;
+        displayElement.innerHTML = newhtml;
+      }
+    }
+  </script>
+</body>
+</html>

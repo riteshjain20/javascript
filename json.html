@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Storage</title>
+</head>
+<style>
+  .odd{
+    background-color: red;
+  }
+  .even{
+    background-color: green;
+  }
+</style>
+<body>
+  <button id='my-btn' onclick="buttonpressed()"></button>
+  <script>
+    // let product = {
+    //   name : 'tshirt',
+    //   price : 700,
+    //   rating : {
+    //     stars : 4.5,
+    //     review : 450,
+    //   },
+    // };
+    // product2 = product;
+    // console.log(product);
+    // console.log(typeof product);
+    // let str = JSON.stringify(product);
+    // console.log(str);
+    // console.log(typeof str);
+    // let newproduct = JSON.parse(str);
+    // console.log(newproduct);
+    // console.log(typeof newproduct);
+
+
+
+
+    // let product = {
+    //   name : 'tshirt',
+    //   price : 700,
+    //   rating : {
+    //     stars : 4.5,
+    //     review : 450,
+    //   },
+    // };
+    // localStorage.setItem('product', JSON.stringify(product));
+    // console.log(localStorage.getItem('product'));
+    // let product2 = JSON.parse(localStorage.getItem('product'));
+    // console.log(product2);
+    // localStorage.removeItem('price');
+    // delete product.price;
+    // localStorage.setItem('product', JSON.stringify(product));
+    // console.log(product);
+    // localStorage.clear();
+
+
+
+    let noOfTimesClicked = localStorage.getItems('noOfTimesClicked') || 0;
+    function buttonpressed(){
+      noOfTimesClicked ++;
+      localStorage.setItems('noOfTimesClicked', noOfTimesClicked);
+      // document.querySelector('#my-btn').innerText = noOfTimesClicked;
+      updatebutton();
+    }
+    function updatebutton(){
+      let button = document.querySelector('#my-btn');
+      if(noOfTimesClicked % 2 === 0){
+        button.classList.remove('odd');
+        button.classList.add('even');
+      }
+      else{
+        button.classList.remove('even');
+        button.classList.add('odd');
+      }
+      button.innerText = noOfTimesClicked;
+    }
+    updatebutton();
+
+
+
+
+  </script>
+</body>
+</html>
