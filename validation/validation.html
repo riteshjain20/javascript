@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validation</title>
+  <style>
+    .error {
+      color: red;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <form action="" method="post" onsubmit="return validation()">
+  <table>
+    <tbody>
+        <tr>
+          <td>
+            <label for="fname">First Name</label>
+          </td>
+          <td>
+            <input type="text" name="fname" id="fname">
+            <span class="error" id="fnameerror"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="lname">Last Name</label>
+          </td>
+          <td>
+            <input type="text" name="lname" id="lname">
+            <span class="error" id="lnameerror"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="email">Email</label>
+          </td>
+          <td>
+            <input type="email" name="email" id="email">
+            <span class="error" id="emailerror"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="pass">Password</label>
+          </td>
+          <td>
+            <input type="password" name="pass" id="pass">
+            <span class="error" id="passerror"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="gender">Gender</label>
+          </td>
+          <td>
+            <input type="radio" name="gender" id="male">
+            <label for='male'>Male</label>
+            <input type="radio" name="gender" id="female">
+            <label for='female'>Female</label>
+            <span class="error" id="generror"></span>
+          </td>
+        </tr>
+        <tr>
+          <td><label for='Skills'>Skills</td>
+          <td>
+            <input type="checkbox" name="skills" id="html">
+            <label for="html">Html</label>
+            <input type="checkbox" name="skills" id="css">
+            <label for="css">CSS</label>
+            <input type="checkbox" name="skills" id="js">
+            <label for="js">JS</label>
+            <input type="checkbox" name="skills" id="bootstrap">
+            <label for="bootstrap">Bootstrap</label>
+            <span class="error" id="skillerror"></span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="city">City</label>
+          </td>
+          <td>
+            <select id="city">
+              <option value="">Select a City</option>
+              <option value="pune">Pune</option>
+              <option value="mumbai">Mumbai</option>
+              <option value="chennai">Chennai</option>
+              <option value="delhi">Delhi</option>
+            </select>
+            <span class="error" id="cityerror"></span>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="submit" value="signup"></td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+
+  <script>
+    function validation(){
+      document.getElementById('fnameerror').innerHTML = '';
+      document.getElementById('lnameerror').innerHTML = '';
+      document.getElementById('emailerror').innerHTML = '';
+      document.getElementById('passerror').innerHTML = '';
+      document.getElementById('generror').innerHTML = '';
+      document.getElementById('skillerror').innerHTML = '';
+      document.getElementById('cityerror').innerHTML = '';
+
+      let fname = document.getElementById('fname').value;
+      let lname = document.getElementById('lname').value;
+      let email = document.getElementById('email').value;
+      let pass = document.getElementById('pass').value;
+      let gender = document.querySelector('input[name=gender]:checked');
+      let skills = document.querySelectorAll('input[name=skills]:checked');
+      let city = document.getElementById('city').value;
+
+      if(fname == ''){
+        document.getElementById('fnameerror').innerHTML = 'First name is required';
+        return false;
+      }
+      if(lname == ''){
+        document.getElementById('lnameerror').innerHTML = 'Last name is required';
+        return false;
+      }
+      if(email == ''){
+        document.getElementById('emailerror').innerHTML = 'Email is required';
+        return false;
+      }
+      if(pass == ''){
+        document.getElementById('passerror').innerHTML = 'Password is required';
+        return false;
+      }
+      if(!gender){
+        document.getElementById('generror').innerHTML = 'Gender is required';
+        return false; 
+      }
+      if(skills.length == 0){
+        document.getElementById('skillerror').innerHTML = 'Select at least one skill';
+        return false;
+      }
+      if(city == ''){
+        document.getElementById('cityerror').innerHTML = 'Select atleast one city';
+        return false;
+      }
+      return true;
+    }
+  </script>
+</body>
+</html>
