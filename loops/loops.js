@@ -302,3 +302,154 @@
 //   console.log(i);
 //   i++;
 // }while(i<=end)
+
+
+// Q11. Sum 1 to 100-------------
+
+// let sum = 0;
+// for(let i=1;i<=100;i++){
+//   sum = sum + i;
+// }
+// console.log(`sum is ${sum}`);
+
+
+// let sum = 0;
+// let i = 1;
+// while(i<=100){
+//   sum = sum+i;
+//   i++;
+// }
+// console.log(`sum is ${sum}`);
+
+
+// let sum = 0;
+// let i = 1;
+// do{
+//   sum = sum+i;
+//   i++;
+// }while(i<=100)
+//   console.log(`sum is ${sum}`);
+
+
+// Q12. Sum even numbers-------------
+
+// let sumOfEven = 0;
+// for(let i = 2;i<=100;i+=2){
+//   sumOfEven = sumOfEven+i;
+// }
+// console.log(`sum of even numbers are ${sumOfEven}`);
+
+
+// let sumOfEven = 0;
+// let i = 2;
+// while(i<=100){
+//   sumOfEven = sumOfEven + i;
+//   i+=2;
+// }
+// console.log(`sum of even numbers are : ${sumOfEven}`);
+
+
+// let sumOfEven = 0;
+// let i = 2;
+// do{
+//   sumOfEven = sumOfEven + i;
+//   i+=2;
+// }while(i<=100)
+//   console.log(`sum of even number are ${sumOfEven}`);
+
+
+// Q13. Sum odd numbers-----------
+
+// let sumOfOdd = 0;
+// for(let i=1;i<=100;i++){
+//   if(i%2!==0){
+//     sumOfOdd = sumOfOdd + i;
+//   }
+// }
+// console.log(`sum of odd numbers are : ${sumOfOdd}`);
+
+
+// let sumOfOdd = 0;
+// let i = 1;
+// while(i<=100){
+//   if(i%2!==0){
+//     sumOfOdd = sumOfOdd + i;
+//   }
+//   i++;
+// }
+// console.log(`sum of odd number are : ${sumOfOdd}`);
+
+
+// let sumOfOdd = 0;
+// let i = 1;
+// do{
+//   if(i%2!==0){
+//     sumOfOdd = sumOfOdd + i;
+//   }
+//   i++;
+// }while(i<=100)
+//   console.log(`sum of odd numbers are ${sumOfOdd}`);
+
+
+// Q14. Count even numbers-------------
+
+// let countEven = 0;
+// for(let i=2;i<=100;i+=2){
+//   countEven++;
+// }
+// console.log(`${countEven}`);
+
+
+// let countEven = 0;
+// let i = 2
+// while(i<=100){
+//   countEven++;
+//   i+=2;
+// }
+// console.log(`${countEven}`);
+
+
+// let countEven = 0;
+// let i = 2;
+// do{
+//   countEven++;
+//   i+=2;
+// }while(i<=100)
+//   console.log(`${countEven}`);
+
+
+// Q15. Count odd numbers----------------
+
+// let countOdd = 0;
+// for(let i=1;i<=100;i++){
+//   if(i%2!==0){
+//     countOdd++;
+//   }
+// }
+// console.log(`${countOdd} odd numbers`);
+
+
+// let countOdd = 0;
+// let i = 1;
+// while(i<=100){
+//   if(i%2!==0){
+//     countOdd++;
+//   }
+//   i++;
+// }
+// console.log(`${countOdd} odd numbers`);
+
+
+// let countOdd = 0;
+// let i = 1;
+// do{
+//   if(i%2!==0){
+//     countOdd++
+//   }
+//   i++;
+// }while(i<=100)
+//   console.log(`${countOdd} odd numbers`);
+
+
+// Q16. Count numbers divisible by 5---------
+
