@@ -453,3 +453,147 @@
 
 // Q16. Count numbers divisible by 5---------
 
+// let count = 0;
+// for(let i=5;i<=100;i+=5){
+//   count++;
+// }
+// console.log(`${count} numbers re divisible by 5`);
+
+
+// let count = 0;
+// let i = 5;
+// while(i<=100){
+//   count++;
+//   i+=5;
+// }
+// console.log(`${count} numbers are divisible by 5`);
+
+
+// let count = 0;
+// let i = 5;
+// do{
+//   count++;
+//   i+=5;
+// }while(i<=100)
+//   console.log(`${count} numbers is divisible by 5`);
+
+// Q17. Sum multiples of 5--------------
+
+// let sum = 0;
+// for(let i=5;i<=100;i+=5){
+//   sum = sum+i;
+// }
+// console.log(`sum is : ${sum}`);
+
+
+// let sum = 0;
+// let i = 5;
+// while(i<=100){
+//   sum = sum+i;
+//   i+=5;
+// }
+// console.log(`sum is : ${sum}`);
+
+
+// let sum = 0;
+// let i = 5;
+// do{
+//   sum = sum+i;
+//   i+=5;
+// }while(i<=100)
+//   console.log(`sum is ${sum}`);
+
+
+// Q18. Sum of squares-----------------
+
+// let sum = 0;
+// let square = 0;
+// for(let i = 1; i<=10;i++){
+//   square = i*i;
+//   sum = sum + square;
+// }
+// console.log(`sum of square is ${sum}`);
+
+
+// let sum = 0;
+// let i = 1;
+// while(i<=10){
+//   sum = sum+ (i*i);
+//   i++;
+// }
+// console.log(`sum of sqaure is ${sum}`);
+
+
+// let sum =0;
+// let i = 1;
+// do{
+//   sum = sum+(i*i);
+//   i++;
+// }while(i<=10)
+//   console.log(`sum of square is ${sum}`);
+
+
+// Q19. Sum of cubes---------------
+
+// let sum = 0;
+// for(let i =1;i<=10;i++){
+//   sum = sum + (i*i*i);
+// }
+// console.log(`sum of cube is : ${sum}`);
+
+
+// let sum = 0;
+// let i = 1;
+// while(i<=10){
+//   sum = sum + (i*i*i);
+//   i++;
+// }
+// console.log(`sum of cube : ${sum}`);
+
+
+// let sum = 0;
+// let i = 1;
+// do{
+//   sum = sum + (i*i*i);
+//   i++;
+// }while(i<=10)
+//   console.log(`sum of cube : ${sum}`);
+
+
+// Q20. Average-------------------
+
+// let average = 0;
+// let sum = 0;
+// let totalcount = 0;
+// for(let i=1; i<=50; i++){
+//   sum = sum + i;
+//   totalcount++
+// }
+// average = sum/totalcount;
+// console.log(`average is : ${average}`);
+
+
+// let i =1;
+// let sum  = 0;
+// let average = 0;
+// let totalcount = 0;
+// while(i<=50){
+//   sum = sum+i;
+//   totalcount++;
+//   i++;
+//   average = sum/totalcount;
+// }
+// console.log(`average is : ${average}`);
+
+
+// let i = 1;
+// let sum = 0;
+// let totalcount = 0;
+// let average = 0;
+// do{
+//   sum = sum+i;
+//   totalcount++
+//   i++;
+//   average = sum/totalcount;
+// }while(i<=50)
+//   console.log(`average is : ${average}`);
