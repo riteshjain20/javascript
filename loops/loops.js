@@ -597,3 +597,307 @@
 //   average = sum/totalcount;
 // }while(i<=50)
 //   console.log(`average is : ${average}`);
+
+
+// Q21. Multiplication table-----------------
+
+// let num = 7;
+// for(let i=1;i<=10;i++){
+//   console.log(`${num} * ${i} = ${num*i}`);
+// }
+
+
+// let num = 7;
+// let i = 1;
+// while(i<=10){
+//   console.log(`${num} * ${i} = ${num*i}`);
+//   i++;
+// }
+
+
+// let num = 7;
+// let i = 1;
+// do{
+//   console.log(`${num} * ${i} = ${num*i}`);
+//   i++;
+// }while(i<=10)
+
+// Q22. Tables 1–10-------------
+
+
+// for(let i=1;i<=15;i++){
+//   for(let j= 1;j<=10;j++){
+//     console.log(`${i} * ${j} = ${i*j}`);
+//   }   
+// }
+
+
+// let i = 1;
+// while(i<=15){
+//   console.log(`table of ${i}`);
+//   let j = 1;
+//   while(j<=10){
+//     console.log(`${i} * ${j} = ${i*j}`);
+//     j++;
+//   }
+//   i++;
+// }
+
+
+// let i = 1;
+// do{
+//   console.log(`table of ${i}`);
+//   let j = 1;
+//   do{
+//     console.log(`${i} * ${j} = ${i*j}`);
+//     j++;
+//   }while(j<=10)
+//   i++;
+// }while(i<=5)
+
+
+// Q23. Factorial------------
+
+// let fact  = 1;
+// let num = 5;
+// for(let i=1;i<=num; i++){
+//   fact = fact*i;
+// }
+// console.log(`factorial of ${num} : ${fact}`);
+
+// let num = 5;
+// let fact = 1;
+// let i = 1;
+// while(i<=num){
+//   fact = fact*i;
+//   i++;
+// }
+// console.log(`factorial of ${num} is ${fact}`);
+
+
+// let num  = 5;
+// let fact = 1;
+// let i = 1;
+// do{
+//   fact=fact*i;
+//   i++;
+// }while(i<=num)
+//   console.log(fact);
+
+
+// Q24. Count digits--------------
+
+// let count = 0;
+// let num = 58392;
+// for(;num>0;num=Math.floor(num/10)){
+//   count++;
+// }
+// console.log(count);
+
+
+// let count = 0;
+// let num = 58392;
+// while(num>0){
+//   count++;
+//   num = Math.floor(num/10);
+// }
+// console.log(count);
+
+
+// let count = 0;
+// let num = 58392;
+// do{
+//   count++;
+//   num = Math.floor(num/10);
+// }while(num>0)
+//   console.log(count);
+
+// Q25. Sum of digits----------------
+
+// let count = 0;
+// let num = 5839;
+// for(;num>0;num = Math.floor(num/10)){
+//   let lastDigit = num%10
+//   count = count + lastDigit;
+// } 
+// console.log(count); 
+
+
+// let count = 0;
+// let num = 5839;
+// while(num>0){
+//   let lastDigit = num%10;
+//   count = count + lastDigit;
+//   num = Math.floor(num/10);
+// }
+// console.log(count);
+
+
+// let count = 0;
+// let num = 5839;
+// do{
+//   let lastDigit = num%10;
+//   count = count + lastDigit;
+//   num = Math.floor(num/10);
+// }while(num>0)
+//   console.log(count);
+
+
+// Q26. Product of digits------------
+
+// let product = 1;
+// let num = 234;
+// for(;num>0;num= Math.floor(num/10)){
+//   let lastDigit = num%10;
+//   product = product*lastDigit;
+// }
+// console.log(product);
+
+
+// let product = 1;
+// let num = 234;
+// while(num>0){
+//   let lastDigit = num%10;
+//   product =  product *lastDigit;
+//   num = Math.floor(num/10);
+// }
+// console.log(product);
+
+
+// let product = 1;
+// let num = 234;
+// do{
+//   let lastDigit = num%10;
+//   product = product * lastDigit;
+//   num = Math.floor(num/10);
+// }while(num>0)
+//   console.log(product)
+
+
+// Q27. Reverse a number-------
+
+// let num = 12345;
+// let reverse = 0;
+// for(;num>0;num=Math.floor(num/10)){
+//   let lastDigit = num%10;
+//   reverse = reverse*10 + lastDigit;
+// }
+// console.log(reverse);
+
+
+// let num = 12345;
+// let reverse = 0;
+// while(num>0){
+//   let LastDigit = num%10;
+//   reverse =  reverse*10 + LastDigit;
+//   num = Math.floor(num/10);
+// }
+// console.log(reverse);
+
+
+// let num = 123456;
+// let reverse = 0;
+// do{
+//   let lastDigit = num%10;
+//   reverse = reverse*10 + lastDigit;
+//   num = Math.floor(num/10);
+// }while(num>0)
+//   console.log(reverse);
+
+
+// Q28. First digit------------
+
+// let firstDigit = 0;
+// let num = 58392;
+// for(;num>=10;num=Math.floor(num/10)){
+// }
+// firstDigit = num;
+// console.log(firstDigit)
+
+
+// let firstDigit = 0;
+// let num = 65438;
+// while(num>=10){
+//   num = Math.floor(num/10);
+// }
+// firstDigit =  num;
+// console.log(firstDigit);
+
+
+// let firstDigit = 0;
+// let num = 7;
+// do{
+//   if(num<10){
+//     break;
+//   }
+//   num = Math.floor(num/10); 
+// }while(num>=10)
+//   firstDigit = num;  
+//   console.log(firstDigit);
+
+
+// // Q29. Last digit--------
+
+// let lastDigit;
+// let num = 9434;
+// for(;num>0;num=Math.floor(num/10)){
+//   lastDigit = num%10;
+//   break;
+// }
+// console.log(lastDigit);
+
+
+// let lastDigit;
+// let num = 9983430;
+// while(num>0){
+//   lastDigit = num%10;
+//   break;
+// }
+// console.log(lastDigit);
+
+
+// let lastDigit = 0;
+// let num = 234234;
+// do{
+//   lastDigit = num%10;
+//   break;
+// }while(num>0)
+//   console.log(lastDigit);
+
+
+// Q30. Count zeroes--------
+
+// let count = 0;
+// let num = 10020300;
+// for(;num>0;num=Math.floor(num/10)){
+//   let lastDigit = num%10;
+//   if(lastDigit===0){
+//     count++;
+//   }
+// }
+// console.log(count);
+
+
+// let count = 0;
+// let num = 10020300;
+// while(num>0){
+//   let lastDigit = num%10;
+//   if(lastDigit === 0){
+//     count++;
+//   }
+//   num = Math.floor(num/10);
+// }
+// console.log(count);
+
+
+// let num = 10020039000;
+// let count = 0;
+// do{
+//   let lastDigit = num%10;
+//   if(lastDigit===0){
+//     count++;
+//   }
+//   num= Math.floor(num/10);
+// }while(num>0)
+//   console.log(count);
+
