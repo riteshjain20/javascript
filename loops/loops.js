@@ -901,3 +901,302 @@
 // }while(num>0)
 //   console.log(count);
 
+
+// Q31. Print positive numbers--------
+
+// for(let i=-10;i<=10;i++){
+//   if(i>0){
+//     console.log(i);
+//   }
+// }
+
+
+// let i=-10;
+// while(i<=10){
+//   if(i>0){
+//     console.log(i);
+//   }
+//   i++;
+// }
+
+
+// let i =-10;
+// do{
+//   if(i>0){
+//     console.log(i);
+//   }
+//   i++;
+// }while(i<=10)
+
+
+// Q32. Print negative numbers-------
+
+// for(let i=-10;i<=10;i++){
+//   if(i<0){
+//     console.log(i);
+//   }
+// }
+
+
+// let i =-10;
+// while(i<=10){
+//   if(i<0){
+//     console.log(i);
+//   }
+//   i++;
+// }
+
+
+// let i =-10;
+// do{
+//   if(i<0){
+//     console.log(i);
+//   }
+//   i++;
+// }while(i<=10)
+
+
+// Q33. Print numbers divisible by both 3 and 5--------
+
+// for(let i=1;i<=200;i++){
+//   if(i%3===0 && i%5===0){
+//     console.log(`${i} is divisible by both 3 and 5`);
+//   }
+// }
+
+
+// let i = 1;
+// while(i<=200){
+//   if(i%3===0 && i%5===0){
+//     console.log(`${i} is divisible by both 3 and 5`);
+//   }
+//   i++;
+// }
+
+// let i = 1;
+// do{
+//   if(i%3===0 && i%5===0){
+//     console.log(i);
+//   }
+//   i++;
+// }while(i<=200)
+
+
+// Q34. Print numbers divisible by 3 OR 5---------
+
+// for(let i=1;i<=100;i++){
+//   if(i%3===0 || i%5===0){
+//     console.log(i);
+//   }
+// }
+
+
+// let i = 1;
+// while(i<=100){
+//   if(i%3===0 || i%5===0){
+//     console.log(i);
+//   }
+//   i++;
+// }
+
+
+// let i = 1;
+// do{
+//   if(i%3===0 || i%5===0){
+//     console.log(i);
+//   }
+//   i++;
+// }while(i<=100)
+
+
+// Q35. Count numbers divisible by 3-------------
+// let count = 0;
+// for(let i=3;i<=500;i+=3){
+//   count++;
+// }
+// console.log(count);
+
+
+// let count =0;
+// let i = 3;
+// while(i<=500){
+//   count++;
+//   i+=3
+// }
+// console.log(count);
+
+
+// let count = 0;
+// let i = 3;
+// do{
+//   count++;
+//   i+=3
+// }while(i<=500)
+//   console.log(count);
+
+
+// Q36. Count numbers divisible by 3 and 5-------------
+
+// let count =0;
+// for(let i=1;i<=500;i++){
+//   if(i%3===0 && i%5===0){
+//     count++;
+//   }
+// }
+// console.log(count);
+
+
+// let count = 0
+// let i = 1;
+// while(i<=500){
+//   if(i%3===0 && i%5===0){
+//     count++;
+//   }
+//   i++;
+// }
+// console.log(count);
+
+
+// let count = 0;
+// let i = 1;
+// do{
+//   if(i%3===0 && i%5===0){
+//     count++;
+//   }
+//   i++;
+// }while(i<=500)
+// console.log(count);
+
+
+// Q37. Find largest number---------
+
+// let num = [20,45,12,67,34];
+// let largest = num[0];
+// for(let i=1;i<num.length;i++){
+//   if(num[i]>largest){
+//     largest = num[i];
+//   }
+// }
+// console.log(`${largest} is largest`);
+
+
+// let num = [20,45,12,67,34];
+// let largest = num[0];
+// let i = 1;
+// while(i<num.length){
+//   if(num[i]>largest){
+//     largest = num[i]
+//   }
+//   i++;
+// }
+// console.log(`${largest} is largest`);
+
+
+// let num = [20,45,12,67,34];
+// let largest = num[0];
+// let i = 1;
+// do{
+//   if(num[i]>largest){
+//     largest = num[i]
+//   }
+//   i++;
+// }while(i<num.length)
+// console.log(`${largest} is largest`)
+
+
+// Q38. Find smallest number-----------
+
+// let num = [20,45,12,67,34];
+// let smallest = num[0];
+// for(i=1;i<num.length;i++){
+//   if(num[i]<smallest){
+//     smallest = num[i]
+//   }
+// }
+// console.log(`${smallest} is smallest number`);
+
+
+// let num = [20,45,12,67,34];
+// let smallest =  num[0];
+// let i = 1;
+// while(i<num.length){
+//   if(num[i]<smallest){
+//     smallest =  num[i];
+//   }
+//   i++;
+// }
+// console.log(`${smallest} is the smallest number`);
+
+
+// let num = [20,45,12,67,34];
+// let smallest = num[0];
+// let i = 1;
+// do{
+//   if(num[i]<smallest){
+//     smallest = num[i];
+//   }
+//   i++;
+// }while(i<num.length)
+// console.log(`${smallest} is the smallest`);
+
+
+// Q39. Print numbers except multiples of 5---------
+
+// for(let i=1;i<=50;i++){
+//   if(i%5===0){
+//     continue;
+//   }
+//   console.log(i);
+// }
+
+
+// let i = 1;
+// while(i<=50){
+//   if(i%5===0){
+//     i++;
+//     continue;
+//   }
+//   console.log(i);
+//   i++; 
+// }
+
+
+// let i = 1;
+// do{
+//   if(i%5===0){
+//     i++;
+//     continue;
+//   }
+//   console.log(i);
+//   i++;
+// }while(i<=50)
+
+
+// Q40. Stop at 37-------------
+
+// for(let i=1;;i++){
+//   if(i===37){
+//     break;
+//   }
+//   console.log(i);
+// }
+
+
+// let i = 1;
+// while(i<=38){
+//   if(i===37){
+//     break;
+//   }
+//   console.log(i);
+//   i++;
+// }
+  
+
+// let i =1;
+// do{
+//   if(i===37){
+//     break;
+//   }
+//   console.log(i);
+//   i++
+// }while(i<=38)
