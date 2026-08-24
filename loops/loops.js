@@ -1200,3 +1200,44 @@
 //   console.log(i);
 //   i++
 // }while(i<=38)
+
+
+// Q41. Check prime--------
+
+// let num = 7;
+// let i;
+// isPrime = true;
+// if(i===1){
+//   isPrime = false;
+// }
+// for(i=2;i<num;i++){
+//   if(num%i===0){
+//     isPrime = false;
+//     break;
+//   }
+// }
+// if(isPrime){
+//   console.log(`${num} is prime number`);
+// }else{
+//   console.log(`${num} is not a prime number`);
+// }
+
+
+let num = 7;
+let isPrime = true;
+let i ;
+if(i===1){
+  isPrime=false
+}
+while(i<num){
+  let i = 2;
+  if(num%i){
+    isPrime = false
+  }
+  i++;
+}
+if(isPrime){
+  console.log(`${num} is prime number`)
+}else{
+  console.log(`${num} not a prime number`)
+}
