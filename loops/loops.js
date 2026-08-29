@@ -1223,21 +1223,225 @@
 // }
 
 
-let num = 7;
-let isPrime = true;
-let i ;
-if(i===1){
-  isPrime=false
-}
-while(i<num){
-  let i = 2;
-  if(num%i){
-    isPrime = false
-  }
-  i++;
-}
-if(isPrime){
-  console.log(`${num} is prime number`)
-}else{
-  console.log(`${num} not a prime number`)
-}
+// let num = 7;
+// isPrime = true;
+// let i;
+// if(num===1){
+//   isPrime = false;
+// }
+// for(i=2;i<num;i++){
+//   if(num%i===0){
+//     isPrime = false;
+//     break;
+//   }
+// }
+// if(isPrime){
+//   console.log(`${num} is prime number`);
+// }else{
+//   console.log(`${num} is not a prime number`);
+// }
+
+
+// let num = 17;
+// let isPrime = true;
+// let i = 2;
+// if(num===1){
+//   isPrime = false;
+// }
+// while(i<num){
+//   if(num%i===0){
+//     isPrime = false;
+//     break;
+//   }
+//   i++;
+// }
+// if(isPrime){
+//   console.log(`${num} is a prime number`);
+// }else{
+//   console.log(`${num} is not a prime number`);
+// }
+
+
+// let num = 1;
+// let i = 2;
+// let isPrime=true;
+// if(num===1){
+//   isPrime=false;
+// }
+// do{
+//   if(num%i===0){
+//     isPrime=false;
+//     break;
+//   }
+//   i++;
+// }while(i<num)
+//   if(isPrime){
+//     console.log(`${num} is prime number`);
+//   }else{
+//     console.log(`${num} is not a prime number`);
+//   }
+
+// Q42. Print primes 1–100--------------
+
+// for(let num=2;num<=100;num++){
+//   let isPrime = true;
+//   for(let i=2;i<num;i++){
+//     if(num%i===0){
+//       isPrime = false;
+//       break;
+//     }
+//   }
+//   if(isPrime){
+//     console.log(`${num} is a prime number`);
+//   }
+// }
+
+
+// let num = 2;
+// while(num<=100){
+//   let isPrime = true;
+//   let i = 2;
+//   while(i<num){
+//     if(num%i===0){
+//       isPrime = false;
+//       break;
+//     }
+//     i++;
+//   }
+//   if(isPrime){
+//     console.log(`${num} is a prime number`);
+//   }
+//   num++;
+// }
+
+
+// Q43. Count primes-----------------
+
+// let count = 0;
+// for(let num=2;num<=100;num++){
+//   let isPrime = true;
+//   for(let i = 2;i<num;i++){
+//     if(num%i===0){
+//       isPrime= false;
+//       break;
+//     }
+//   }
+//   if(isPrime){
+//     count++;
+//   }
+// }
+// console.log(`${count} prime number`);
+
+
+// let count = 0;
+// let num = 2;
+// while(num<=100){
+//   let isPrime= true;
+//   let i = 2;
+//   while(i<num){
+//     if(num%i===0){
+//       isPrime = false;
+//       break;
+//     }
+//     i++;
+//   }
+//   num++
+//   if(isPrime){
+//     count++;
+//   }
+// }
+// console.log(`${count} prime number`);
+
+
+// Q44. Sum of primes-------------------
+
+// let sum = 0;
+// for(num=2;num<=100;num++){
+//   let isPrime = true;
+//   for(i=2;i<num;i++){
+//     if(num%i===0){
+//       isPrime=false;
+//       break;
+//     }
+//   }
+//   if(isPrime){
+//     sum = sum + num;
+//   }
+// }
+// console.log(sum);
+
+
+// let sum = 0;
+// let num = 2;
+// while(num<=100){
+//   let isPrime = true;
+//   let i = 2;
+//   while(i<num){
+//     if(num%i===0){
+//       isPrime = false;
+//       break;
+//     }
+//     i++;
+//   }
+//   if(isPrime){
+//     sum = sum + num;
+//   }
+//   num++;
+// }
+// console.log(sum);
+
+
+// Q45. Print primes in a range--------------
+
+// let start = 10;
+// let end =  30;
+// for(let num=start; num<=end; num++){
+//   let isPrime = true;
+//   for(let i=2;i<num;i++){
+//     if(num%i===0){
+//       isPrime=false;
+//       break;
+//     }
+//   }
+//   if(isPrime){
+//     console.log(`${num}`);
+//   }
+// }
+
+
+// let start = 10;
+// let end = 30;
+// let num = start;
+// while(num<=end){
+//   let isPrime = true;
+//   let i = 2;
+//   while(i<num){
+//     if(num%i===0){
+//       isPrime= false;
+//       break;
+//     }
+//     i++;
+//   }
+//   num++;
+//   if(isPrime){
+//     console.log(`${num}`);
+//   }
+// }
+
+
+// Q47. Palindrome number----------------
+
+// let num = 121;
+// let i;
+// let originalNum = num;
+// let reverse = 0;
+// for(;num>0;num=Math.floor(num/10)){
+//   let lastDigit = num%10;
+//   reverse = reverse*10+lastDigit;
+// }
+// if(reverse===originalNum){
+//   console.log(`${originalNum} is a palindrom number`);
+// }
+// else{
+//   console.log(`${originalNum} is not a palindrom number`);
+// }
