@@ -1445,3 +1445,45 @@
 // else{
 //   console.log(`${originalNum} is not a palindrom number`);
 // }
+
+
+// let num = 121;
+// let originalNum = num;
+// let reverse = 0;
+// while(num>0){
+//   let lastDigit = num%10;
+//   reverse = reverse*10 + lastDigit;
+//   num = Math.floor(num/10); 
+// }
+// if(reverse===originalNum){
+//   console.log(`${originalNum} is a palindrom number`);
+// }else{
+//   console.log(`${originalNum} is not a palindrom number`);
+// }
+
+
+// let num = 121;
+// let reverse = 0;
+// let originalNum = num;
+// do{
+//   let lastDigit = num%10;
+//   reverse = reverse * 10 + lastDigit;
+//   num = Math.floor(num/10);
+// }while(num>0)
+//   if(originalNum===reverse){
+//     console.log(`${originalNum} is a palindrome number`);
+//   }else {
+//     console.log(`${originalNum} is not a palindrome number`);
+//   }
+
+
+
+for(let num=1;num<=1000;num++){
+  let reverse = 0;
+  let originalNum = num;
+  let lastDigit = num%10;
+  reverse = reverse*10+lastDigit;
+  if(originalNum===reverse){
+    console.log(`${originalNum}`)
+  }
+}
