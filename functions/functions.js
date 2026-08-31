@@ -149,12 +149,108 @@
   // }
   // printDivisible();
 
+  // Q1. Create a function greet(name) that prints:------------------------------------------
+  
+  // function greet(name){
+  //   console.log(`${name}`);
+  // }
+  // greet('ritesh');
+  
+  
+  // function greet(name){
+  //   return name;
+  // }
+  // console.log(greet('ritesh'));
+  
+  // Q2. Create square(num) that prints the square of a number.------------------------------------------
+
+  // function square(num){
+  //   return num*num;
+  // }
+  // console.log(square(7));
+
+  // Q3. Create cube(num) that prints the cube.------------------------
+
+  // function cube(num){
+  //   return num*num*num;
+  // }
+  // console.log(cube(3));
 
 
+  // Q4. Create double(num) that prints double the number.------------
+
+  // function double(num){
+  //   console.log(`${num*2}`);
+  // }
+  // double(15);
 
 
+  // Q5. Create half(num) that prints half the number.--------------
+
+  // function half(num){
+  //   console.log(num/2);
+  // }
+  // half(10);
+
+  // Q6. Create:------------------------
+
+  // function add(a,b){
+  //   return sum = a+b;
+  // }
+  // console.log(add(20,10));
+
+  // Q7-------------------
+
+  // function subtract(a,b){
+  //   return subtract = a-b;
+  // }
+  // console.log(subtract(20,10));
+
+  // Q8---------------------
+
+  // function multiply(a,b){
+  //   return multiply = a*b;
+  // }
+  // console.log(multiply(20,10));
+
+  // Q9-----------------------
+
+  // function divide(a,b){
+  //   return divide = a/b;
+  // }
+  // console.log(divide(20,10));
+
+  // Q10----------------------------
+
+  // function remainder(a,b){
+  //   return remainder = a%b;
+  // }
+  // console.log(remainder(20,8));
 
 
+  // Q11. Create oddEven(num) that prints whether the number is odd or even.
+
+  // function OddEven(num){
+  //   if(num%2===0){
+  //     return `Even Number`;
+  //   }else{
+  //     return `Odd Number`
+  //   }
+  // }
+  // console.log(OddEven(31));
+
+  // Q12. Create positiveNegative(num).-----------
+
+  // function positiveNegative(num){
+  //   if(num > 0){
+  //     console.log('positive number');
+  //   } else if(num<0){
+  //     console.log(`Negetive number`);
+  //   }else{
+  //     console.log(`Zero`);
+  //   }
+  // }
+  // positiveNegative(-99);
 
 
 
