@@ -452,5 +452,76 @@
 // }
 // console.log(factorial(5));
 
+// -----------------------------------------------------------------------
+
+// const formatName = function(name){
+//   return name.toUpperCase();
+// }
+// console.log(formatName('ritesh'));
 
 
+// const calculator = {
+//   add : function(a,b){
+//     return a+b;
+//   },
+//   subtract : function(a,b){
+//     return a-b;
+//   },
+//   multiply : function(a,b){
+//     return a*b;
+//   },
+//   divide : function(a,b){
+//     return a/b;
+//   },
+// }
+// console.log(calculator.add(10,20));
+// console.log(calculator.subtract(100,20));
+// console.log(calculator.multiply(10,20));
+// console.log(calculator.divide(100,20));
+
+
+// const celsiusToFahrenheit = function(celsius){
+//   return fahrenheit = (celsius * 9/5) + 32
+// }
+// console.log(celsiusToFahrenheit(38));
+
+
+// const validatePassword = function(password) {
+//   if (password.length < 8){
+//     return `password must be atleast 8 characters`;
+//   }else {
+//     return `true`;
+//   }
+// }
+// console.log(validatePassword('riteshjain'));
+
+
+// const isInRange = function(num, min, max){
+//   if(num >= min && num<= max){
+//     return true;
+//   }
+//   else{
+//     return false;
+//   }
+// }
+// console.log(isInRange(20,10,29));
+
+
+// const getGrade = function(marks){
+//   if(marks >= 90){
+//     return 'A';
+//   }
+//   else if(marks >= 80 && marks < 90){
+//     return 'B';
+//   }
+//   else if(marks >= 70 && marks < 79){
+//     return 'C';
+//   }
+//   else if(marks >= 60 && marks < 69){
+//     return 'D';
+//   }
+//   else{
+//     return 'Fail';
+//   }
+// }
+// console.log(getGrade(88));
