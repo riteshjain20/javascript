@@ -253,8 +253,204 @@
   // positiveNegative(-99);
 
 
+// ------------------------------------------
+
+// function calculate(a,b,c){
+//   return a+b+c;
+// }
+// console.log(calculate(10,20,30));
 
 
+// function calculate(a,b,c){
+//   return a*b*c;
+// }
+// console.log(calculate(10,20,3));
+
+
+// function average(a,b,c){
+//   return (a+b+c)/3;
+// }
+// console.log(average(10,20,40));
+
+
+// function largest(a,b,c){
+//   if(a>=b && a>=c){
+//     return `${a} is largest`; 
+//   }
+//   else if(b>=c && b>=a){
+//     return `${b} is largest`; 
+//   }
+//   else{
+//     return `${c} is largest`; 
+//   }
+// }
+// console.log(largest(10,54,99));
+
+
+// function smallest(a,b,c){
+//   if(a<=b && a<=c){
+//     return `${a} is smallest`; 
+//   }
+//   else if(b<=c && b<=a){
+//     return `${b} is smallest`; 
+//   }
+//   else{
+//     return `${c} is smallest`; 
+//   }
+// }
+// console.log(smallest(10,54,99));
+
+// function calculateBill(price,quantity,discount){
+//   let total = price*quantity;
+//   let finalAmount = total - discount;
+//   return finalAmount;
+// }
+// console.log(calculateBill(500,10,200));
+
+
+// function studentResult(name, marks1, marks2, marks3){
+//   let total = marks1+marks2+marks3;
+//   let percentage = Math.round((total/300)*100);
+//   console.log(`${name} has scored ${total} marks and ${percentage} percent`)
+// }
+// studentResult('Ritesh',90,89,78);
+
+
+// function calculateSalary(basic,bonus,tax){
+//   return total = basic + bonus - tax;
+// }
+// console.log(calculateSalary(50000,10000,799));
+
+
+// function checkTriangle(a,b,c){
+//   if(a + b > c && a + c > b && b + c > a){
+//     return `this is  traingle`;
+//   }
+//   else{
+//     return `this is not a triangle`;
+//   }
+// }
+// console.log(checkTriangle(3,4,5));
+
+
+// function calculator(a,b,operator){
+//   if(operator === '+'){
+//     return a+b;
+//   }else if(operator === '-'){
+//     return a-b;
+//   }else if(operator === '*'){
+//     return a*b;
+//   }else if(operator === '/'){
+//     return a/b;
+//   }else {
+//     return "Invalid operator";
+//   }
+// }
+// console.log(calculator(20,5,'+'));
+// console.log(calculator(20,5,'-'));
+// console.log(calculator(20,5,'*'));
+// console.log(calculator(20,5,'/'));
+
+// ------------------------------------------
+
+// function greet(name = 'Ritesh'){
+//   console.log(`Hello ${name}`);
+// }
+// greet();
+
+
+// function calculatePrice(price, tax = 18){
+//   console.log(`price of item is ${price} and tax is ${tax}`);
+// }
+// calculatePrice(10000);
+
+
+// function power(num, exponent=2){
+//   let result = 1;
+//   for(let i=1; i<=exponent;i++){
+//     result = result *num;
+//   }
+//   return result;
+// }
+// console.log(power(5,2));
+// console.log(power(7,3));
+// console.log(power(3,5));
+
+
+// function multiply(a,b=2){
+//   return a*b
+// }
+// console.log(multiply(4));
+
+
+// function createUser(name= 'Guest', age=18){
+//   return `this name is ${name} and age is ${age}`;
+// }
+// console.log(createUser());
+
+
+// function calculateBill(price, quantity = 1, discount = 0){
+//   let total = price*quantity - discount;
+//   return total;
+// }
+// console.log(calculateBill(500));
+// console.log(calculateBill(500,3));
+// console.log(calculateBill(500,3,200));
+
+
+// function calculateSalary(basic, bonus = 0, tax = 0){
+//   return basic + bonus - tax;
+// }
+// console.log(calculateSalary(500000));
+
+
+// function rectangleArea(length, width = length){
+//   return length * width;
+// }
+// console.log(rectangleArea(5));
+// console.log(rectangleArea(5,10));
+
+
+// function calculateInterest(principal, rate = 5, time = 1){
+//   let SI = (principal * rate *time) / 100;
+//   return SI;
+// }
+// console.log(calculateInterest(10000));
+
+
+// function student(name = "Unknown", marks = 0, total = 100){
+//   let percentage = (marks/total)*100;
+//   return `${percentage}`;
+// }
+// console.log(student('ritesh', 90, 100));
+
+// ---------------------------------------
+
+
+// let add = function(a,b){
+//   return a+b;
+// }
+// console.log(add(10,20));
+
+
+// let checkAge = function(age){
+//   if(age>=18){
+//     return 'You are eligible to vote';
+//   }else{
+//     return 'not eligible to vote';
+//   }
+// }
+// console.log(checkAge(23));
+
+
+// let factorial = function(num){
+//   let fact = 1;
+//   for(i=1;i<=num;i++){
+//     fact = fact*i;
+//   }
+//   return fact;
+// }
+// console.log(factorial(5));
 
 
 
