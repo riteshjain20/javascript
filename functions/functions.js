@@ -525,3 +525,142 @@
 //   }
 // }
 // console.log(getGrade(88));
+
+
+// const calculateShipping = function(weight) {
+//   if(weight <= 1){
+//     return `50$`;
+//   }
+//   else if(weight >1 && weight <= 5){
+//     return `100$`;
+//   }
+//   else if(weight > 5){
+//     return `200$`;
+//   }
+//   else{
+//     return `Invalid weight`;
+//   }
+// }
+// console.log(calculateShipping(8));
+
+
+// const login = function(username, password) {
+//   if(username === 'admin' && password === '1234'){
+//     return `Login Successful`;
+//   }else{
+//     return `Invalid credentials`;
+//   }
+// }
+// console.log(login('ritesh','1234'));
+// console.log(login('admin','1234'));
+
+
+// const calculateElectricityBill = function(units) {
+//   if(units > 0 && units <=100){
+//     return units * 5;
+//   }
+//   else if(units > 101 && units <=200){
+//     return units * 7;
+//   }
+//   else if(units > 200){
+//     return units * 10;
+//   }
+//   else {
+//     return `Invalid units`;
+//   }
+// }
+// console.log(calculateElectricityBill(89));
+
+
+// const getBMICategory = function(weight, height) {
+//   let BMI =  weight / (height * height);
+//   if(BMI < 18.5){
+//     return `You are Underweight`;
+//   }else if(BMI >= 18.5 && BMI < 25){
+//     return `You are Normal weight`;
+//   }else if(BMI >= 25 && BMI < 30){
+//     return `You are Overweight`;
+//   }else if(BMI >= 30){
+//     return `You are Obese`;
+//   }
+// }
+// console.log(getBMICategory(73,1.71));
+
+
+// const sumOfDigits = function(num) {
+//   let sum = 0;
+//   for(;num>0; num=Math.floor(num/10)) {
+//     let lastDigit = num%10;
+//     sum = sum+lastDigit;
+//   }
+//   return sum;
+// }
+// console.log(sumOfDigits(1234));
+
+
+// const reverseNumber = function(num){
+//   let reverse = 0
+//   let sum = 0;
+//   for(;num>0;num=Math.floor(num/10)){
+//     let lastDigit = num%10;
+//     sum = sum+lastDigit;
+//     reverse = reverse*10 + lastDigit;
+//   }
+//   return reverse;
+// }
+// console.log(reverseNumber(1234));
+
+
+// const factorial = function(num) {
+//   let fact = 1;
+//   for(let i = 1; i<=num; i++){
+//     fact = fact*i;
+//   }
+//   return fact;
+// }
+// console.log(factorial(5));
+
+
+// const user = {
+//   name : 'Ritesh',
+//   greet : function(name){
+//     console.log(`Helloo ${name}`)
+//   }
+// }
+// user.greet(user.name);
+
+
+// const operations = [
+//   function add(a,b){
+//     return a+b;
+//   },
+//   function add(a,b){
+//     return a-b;
+//   },
+//   function add(a,b){
+//     return a*b;
+//   }
+// ]
+// console.log(operations[0](50,10));
+// console.log(operations[1](50,10));
+// console.log(operations[2](50,10));
+
+
+// const operations = {
+//   add: function(a, b) {
+//     return a+b;
+//   },
+//   subtract: function(a, b) {
+//     return a-b;
+//   },
+//   multiply: function(a, b) {
+//     return a*b;
+//   },
+//   divide: function(a, b) {
+//     return a/b;
+//   }
+// };
+// console.log(operations.add(20,10));
+// console.log(operations.subtract(20,10));
+// console.log(operations.multiply(20,10));
+// console.log(operations.divide(20,10));
