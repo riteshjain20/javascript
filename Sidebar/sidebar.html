@@ -8,44 +8,81 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
-  <header class="sidebar-header">
-    <a href="#" class="header-logo">
-      <img src="logo.png" alt="logo" width="100">
-    </a>
-    <button class="toggler">
-      <i class="fa-solid fa-angle-left"></i>
-    </button>
-  </header>
-  <nav class="sidebar-nav">
-    <ul class="nav-list primary-nav">
-      <li class="nav-item">
-        <a href="#" class="nav-link">
-          <i class="fa-regular fa-house nav-icon"></i>
-          <span class="nav-label">Home</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link">
-          <i class="fa-regular fa-house nav-icon"></i>
-          <span class="nav-label">About</span>
-        </a>
-      </li>
-    </ul>
+  <aside class="sidebar">  
+    <header class="sidebar-header">
+      <a href="#" class="header-logo">
+        <img src="logo.png" alt="logo" width="100">
+      </a>
+      <button class="toggler sidebar-toggler">
+        <i class="fa-solid fa-angle-left"></i>
+      </button>
+      <button class="toggler menu-toggler">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </header>
+    <nav class="sidebar-nav">
+      <ul class="nav-list primary-nav">
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="fa-regular fa-house nav-icon"></i>
+            <span class="nav-label">Dashboard</span>
+          </a>
+          <span class="nav-tooltip">Dashboard</span>
+        </li> 
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="fa-regular fa-calendar-days nav-icon"></i>
+            <span class="nav-label">Calender</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="fa-regular fa-bell nav-icon"></i>
+            <span class="nav-label">Notification</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="fa-solid fa-users nav-icon"></i>
+            <span class="nav-label">Team</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="fa-regular fa-chart-bar nav-icon"></i>
+            <span class="nav-label">Analytics</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="fa-regular fa-bookmark nav-icon"></i>
+            <span class="nav-label">Bookmarks</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="fa-solid fa-gear nav-icon"></i>
+            <span class="nav-label">Settings</span>
+          </a>
+        </li>
+      </ul>
 
-    <ul class="nav-list secondary-nav">
-      <li class="nav-item">
-        <a href="#" class="nav-link">
-          <i class="fa-regular fa-house nav-icon"></i>
-          <span class="nav-label">Home</span>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link">
-          <i class="fa-regular fa-house nav-icon"></i>
-          <span class="nav-label">About</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
+      <ul class="nav-list secondary-nav">
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="fa-regular fa-user nav-icon"></i>
+            <span class="nav-label">Profile</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="fa-solid fa-user-plus nav-icon"></i>
+            <span class="nav-label">Logout</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+  <script src="sidebar.js"></script>
 </body>
 </html>

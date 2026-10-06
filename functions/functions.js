@@ -664,3 +664,55 @@
 // console.log(operations.subtract(20,10));
 // console.log(operations.multiply(20,10));
 // console.log(operations.divide(20,10));
+
+
+// -------------------------------------------------
+
+// const square = (num) => num*num;
+// console.log(square(5));
+
+
+// const greet = (name) => `Hello ${name}`;
+// console.log(greet('ritesh'));
+
+
+// const calculateArea = (length,width) => length * width;
+// console.log(calculateArea(5,10));
+
+
+// const power = (num, exponent=2) => {}
+// console.log(power(5,3));
+
+
+// const isEven = (num) => num%2===0? true: false;
+// console.log(isEven(4));
+
+
+// const checkNumber = (num) => num>0? 'positive' : num<0? 'negetive' : num===0? 'zero': 'Invalid number';
+// console.log(checkNumber(10));
+
+
+// const maxNumber = (a,b) => a>b? a: b;
+// console.log(maxNumber(10,20));
+
+
+// const maxOfThree = (a,b,c) => {
+//   if(a >b && a>c){
+//     return a;
+//   }else if(b>c && b>a){
+//     return b;
+//   }else{
+//     return c;
+//   }
+// }
+// console.log(maxOfThree(3,5,9));
+
+
+// const sumArray = (arr) => {
+//   let sum = 0;
+//   for(i=0;i<arr.length,i++){
+//     sum = sum + arr[i];
+//   }
+//   return sum;
+// }
+// console.log(sumArray([arr])); 
