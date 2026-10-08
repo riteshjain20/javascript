@@ -11,12 +11,12 @@ body {
   background:linear-gradient(#f1faff,#cbe4ff)
 }
 .sidebar{
-  width:270px;
-  height:calc(100vh-32px);
   position:fixed;
+  width:270px;
+  height:calc(100vh - 32px);
   margin:16px;
   border-radius:16px;
-  background:#151a20;
+  background:#151a2d;
   transition: 0.4s ease;
 }
 .sidebar.collapsed {
@@ -30,11 +30,11 @@ body {
   padding:25px 20px;
 }
 .sidebar-header .header-logo img {
+  display:block;
   width: 46px;
   height:46px;
-  object-fit:cover;
+  object-fit:contain;
   border-radius:50%;
-  display:block;
 }
 .sidebar-header .toggler{
   height:35px;
@@ -54,7 +54,7 @@ body {
   right: 20px;
 }
 .sidebar.collapsed .sidebar-header .sidebar-toggler{
-  /* transform: translate(-4px, 65px); */
+  transform: translate(-4px, 65px);
 }
 .sidebar-header .toggler:hover{
   background:#dde4fb;
@@ -62,11 +62,11 @@ body {
 .sidebar-header .menu-toggler {
   display: none;
 }
-.sidebar-header .sidebar-toggler span {
+.sidebar-header .sidebar-toggler i {
   font-size:1.75rem;
   transition:0.4s ease;
 }
-.sidebar.collapsed .sidebar-header .toggler span {
+.sidebar.collapsed .sidebar-header .toggler i {
   transform: rotate(180deg);
 }
 .sidebar-nav .nav-list {
@@ -75,11 +75,11 @@ body {
   padding:0px 15px;
   flex-direction:column;
   list-style:none;
-  transform:transitionY(15px);
+  transform:translateY(15px);
   transition: 0.4s ease;
 }
 .sidebar.collapsed .sidebar-nav .primary-nav {
-  transform:transitionY(65px);
+  transform:translateY(65px);
 }
 .sidebar-nav .nav-link{
   display:flex;
@@ -87,9 +87,9 @@ body {
   gap: 12px;
   white-space: nowrap;
   padding:12px 15px;
-  color:#fff;
   border-radius:8px;
   text-decoration:none;
+  color:#fff;
   transition:0.4s ease;
 }
 .sidebar-nav .nav-link:hover{
@@ -105,7 +105,7 @@ body {
 .sidebar-nav .nav-tooltip{
   position: absolute;
   top: -10px;
-  left: calc(100%+25px);
+  left: calc(100% + 25px);
   color: #151a2d;
   padding: 6px 12px;
   border-radius: 8px;
@@ -126,7 +126,6 @@ body {
   transform: translateY(50%);
   transition: 0.4s ease;
 }
-
 .sidebar.collapsed .sidebar-nav .nav-link .nav-label {
   opacity: 0;
   pointer-events: none;
@@ -141,8 +140,8 @@ body {
     height: 56px;
     overflow-y: hidden;
     margin: 13px;
-    width: calc(100%-28px);
-    max-height: calc(100vh-28px);
+    width: calc(100% - 28px);
+    max-height: calc(100vh - 28px);
     scrollbar-width: none;
   }
   .sidebar.menu-active{

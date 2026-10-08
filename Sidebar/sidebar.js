@@ -2,7 +2,7 @@ const sidebar = document.querySelector('.sidebar');
 const sidebarToggler =  document.querySelector('.sidebar-toggler');
 const menuToggler =  document.querySelector('.menu-toggler');
 const collapsedSidebarheight = '56px';
-const fullSidebarHeight = 'calc(100vh-32px)';
+const fullSidebarHeight = 'calc(100vh - 32px)';
 
 sidebarToggler.addEventListener('click',()=>{
   sidebar.classList.toggle('collapsed');
@@ -10,7 +10,7 @@ sidebarToggler.addEventListener('click',()=>{
 const toggleMenu = (isMenuActive) =>{
   sidebar.style.height = isMenuActive ? `${sidebar.scrollHeight}px` : ``;
   collapsedSidebarheight;
-  menuToggler.querySelector('span').innerText = isMenuActive ? 'close':'menu';
+  menuToggler.querySelector('.nav-icon').innerText = isMenuActive ? '<i class="fa-solid fa-xmark"></i>':'<i class="fa-solid fa-bars"></i>';
 }
 menuToggler.addEventListener('click',()=>{
   toggleMenu(sidebar.classList.toggle('menu-active'));
