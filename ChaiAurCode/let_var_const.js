@@ -13,4 +13,5 @@ accountCity = 'Delhi';
 // console.log(accountEmail);
 // console.log(aaccountPassword);
 // console.log(accountCity);
-console.table([accountId,accountEmail, aaccountPassword,accountCity,accountState]);
+
+// console.table([accountId,accountEmail, aaccountPassword,accountCity,accountState]);
