@@ -102,3 +102,7 @@ let shoppingCart = [
 
 const result = shoppingCart.reduce((acc,currval)=>{return acc+currval.price},0)
 console.log(result);
+
+
+
+

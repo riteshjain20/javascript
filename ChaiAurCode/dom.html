@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+</head>
+<body>
+  <ul class="list-group">
+    <li></li>
+  </ul>
+  <script>
+    function addLanguage(langname){
+      const li = document.createElement('li');
+      li.innerHTML = `${langname}`;
+      document.querySelector('.list-group').appendChild(li);
+    }
+    addLanguage('javascript');
+
+    function optiLang(lanName){
+      const li = document.createElement('li');
+      li.appendChild(document.createTextNode(lanName));
+      document.querySelector('.list-group').appendChild(li)
+    }
+    optiLang('python');
+    const changeLange = document.querySelector('li:nth-child(2)');
+    
+  </script>
+</body>
+</html>
