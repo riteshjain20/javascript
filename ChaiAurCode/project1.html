@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body{
+        transition: all 2s linear;
+      .button {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+      }
+      #grey {
+        background-color: grey;
+      }
+      #red {
+        background-color: red;
+      }
+      #green {
+        background-color: green;
+      }
+      #purple {
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 class="" style="text-align: center">Color scheme switcher</h1>
+      <div
+        class="box_wrapper"
+        style="
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+        "
+      >
+        <div class="button" id="grey"></div>
+        <div class="button" id="red"></div>
+        <div class="button" id="green"></div>
+        <div class="button" id="purple"></div>
+      </div>
+    </div>
+    <script>
+      const button = document.querySelectorAll(".button");
+      const body = document.querySelector("body");
+      button.forEach((button) => {
+        button.addEventListener("click", (e) => {
+          if (e.target.id === "grey") {
+            body.style.backgroundColor = e.target.id;
+          }
+          if (e.target.id === "red") {
+            body.style.backgroundColor = e.target.id;
+          }
+          if (e.target.id === "green") {
+            body.style.backgroundColor = e.target.id;
+          }
+          if (e.target.id === "purple") {
+            body.style.backgroundColor = e.target.id;
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
