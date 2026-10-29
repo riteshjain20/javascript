@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events</title>
+  <style>
+    img{
+      height: 100px;
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <ul class="images">
+    <li><img src="https://pixabay.com/images/download/x-10109564_1920.jpg" id="img1" alt=""></li>
+    <li><img src="https://pixabay.com/photos/waterfall-nature-iceland-landscape-10541967/" alt="" id="img2"></li>
+    <li><img src="https://pixabay.com/images/download/x-9310091_1920.jpg" alt="" id="img3"></li>
+  </ul>
+  <script>
+    const images = document.querySelector('.images').addEventListener('click',(e)=>{
+      console.log(e.target.parentNode);
+      let removeNode = e.target.parentNode;
+      removeNode.remove();
+    })
+  </script>
+</body>
+</html>
