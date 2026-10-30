@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASYNC AWAIT</title>
+</head>
+<body>
+  <div>
+    <h1>Async Await</h1>
+    <div id="insert">
+      <div class="key">Press the key</div>
+    </div>
+    <div>
+      <p></p>
+      <button id="start">Start</button>
+      <button id="stop">Stop</button>
+    </div>
+
+  </div>
+  <script>
+
+    const insert = document.getElementById('insert');
+    window.addEventListener('keydown',(e)=>{
+      insert.innerHTML = `
+          <div class="color">
+      <table>
+        <tr>
+          <th>key</th>
+          <th>keycode</th>
+          <th>Code</th>
+        </tr>
+        <tr>
+          <th>${e.key}</th>
+          <th>${e.keycode}</th>
+          <th>${e.code}</th>
+        </tr>
+      </table>
+    </div>
+      `;
+    })
+    
+    // const ritesh = () => {
+    //   console.log('ritesh')
+    // }
+    // setTimeout(ritesh, 2000);
+
+
+
+    // const changeText = ()=>{
+    //   document.querySelector('p').innerHTML = 'Javascript'
+    // }
+    // const changeme = setTimeout(changeText, 4000);
+    // document.querySelector('#stop').addEventListener('click',()=>{
+    //   clearTimeout(changeme);
+    //   console.log('stoppp');
+    // })
+
+
+
+    // setInterval(() => {
+    //   console.log('riteshjain')
+    // }, 2000);
+  </script>
+</body>
+</html>
